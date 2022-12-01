@@ -102,8 +102,6 @@ CREATE TABLE IF NOT EXISTS `novedades` (
 --
 
 INSERT INTO `novedades` (`id`, `titulo`, `subtitulo`, `cuerpo`, `img_id`) VALUES
-(1, 'aaaaaaaaa', 'aaaaaaaa', 'aaaaaaaaaaaaa', ''),
-(2, 'aaaaa', 'aaaaa', 'aaaaaaaa', ''),
 (3, 'Premios Martín Fierro', 'Premios de la televisión y radio en la República Argentina', 'Leandro Alegria, miembro de nuestro equipo, fue ganador de la seccion cultura general, con la realizacion del video \"Teatros Abiertos\"', 'ixqrsk6aimmbc9oiqm1c');
 
 -- --------------------------------------------------------

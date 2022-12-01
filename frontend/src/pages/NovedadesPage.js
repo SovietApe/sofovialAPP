@@ -11,7 +11,7 @@ const NovedadesPage = (porps) => {
     useEffect(() => {
         const cargarNovedades = async () => {
             setLoading(true);
-            const response = await axios.get('http://localhost:3000/api/novedades');
+            const response = await axios.get(`${process.env.REACT_API_URL}/api/novedades`);
             setNovedades(response.data)
             setLoading(false);
         };
@@ -19,13 +19,7 @@ const NovedadesPage = (porps) => {
     }, [])
     return (
         <body>
-            <div className='container'><h2>Novedades</h2>
-                <nav class="navbar bg-gradient">
-                    <div class="buscador">
-                        <input type="search" placeholder="Search" aria-label="Search" />
-                    </div>
-                </nav>
-            </div>
+            <div className='container'><h2>Novedades</h2></div>
             <div className='contenedor2'>
                 <section className='contenedor1'>
                     {loading ? (
