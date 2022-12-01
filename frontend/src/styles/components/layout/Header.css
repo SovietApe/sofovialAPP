@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+header{
+    border-top: 2px solid #c24c28;
+    min-height: 70px;
+    width: 100%;
+    display: flex;
+    background: whitesmoke;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu a{ 
+ color: black;
+ text-decoration: none;
+ font-weight: 600;
+ font-family: 'Montserrat', sans-serif;
+ padding-right: 10px;
+}
+
+.menu a:hover{
+    color: #c24c28;
+}
+
+.logo{
+    display: flex;
+}
+
+.logo-img{
+    height: 90px;
+    padding-left: 20%;
+    margin: 6%;
+}
+
+@media (max-width: 1080px){
+
+    /*empieza header*/
+    header{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .menu a{
+
+        font-size: 60%;
+
+    }
+
+    .logo-img{
+        padding-left: 0%;
+    }
+}

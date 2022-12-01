@@ -1,0 +1,120 @@
+.body1{
+    background-color: #c24c28;
+}
+.espacio{
+    height: 700px;
+}
+
+.container1{
+    width: 100%;
+    background-color: whitesmoke;
+    height: auto;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
+    padding-bottom: 30px;
+    border-bottom: 3px solid #c24c28;
+}
+
+.imghb{
+    width: 100%;
+}
+
+#titulo1{
+    text-align: center;
+    padding-top: 3%;
+    font-family: Montserrat;
+    font-size: 200%;
+}
+
+/* tabla personas*/
+.personas{
+    padding-top: 3%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    
+}
+
+.persona{
+    border: 1px solid #c24c28;
+    border-radius: 5px;
+    width: 25%;
+    text-align: center;
+    padding: 13px;
+    box-sizing: border-box;
+}
+
+.persona img{
+    border-radius: 50%;
+    max-width: 80%;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+.persona h5,
+.persona h6{
+    margin: 0;
+    font-weight: normal;
+    color: black;
+}
+
+.persona h5{
+    font-size: 18px;
+    margin-top: 5%;
+}
+
+.persona h6{
+    font-size: 12px;
+    font-style: italic;
+}
+
+.persona p{
+    color: #666;
+    font-size: 10px;
+}
+/*Media Code*/
+@media (max-width: 1080px){
+
+    /*empieza header*/
+    header{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .menu a{
+
+        font-size: 60%;
+
+    }
+
+    .logo-img{
+        padding-left: 0%;
+    }
+    /*termina header*/
+    body{
+        background-image: none;
+        background-color: #c24c28;
+    }
+
+    #titulo{
+        font-size: 125%;
+    }
+    /*columna personas*/
+
+    .espacio{
+        width: 100%;
+        height: auto   ;
+    }
+
+    .personas{
+
+        width: auto;
+        height: auto;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .persona{
+        width: 80%;
+    }
+}

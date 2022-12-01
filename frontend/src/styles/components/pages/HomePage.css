@@ -1,0 +1,159 @@
+
+.body-{
+    background-image: url(../../../public/images/sofovial_background.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-decoration: none;
+}
+
+#vacio{
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+    height: 700px;
+}
+
+
+
+
+/* TITULO seccion*/
+
+.titulo{
+    margin: 0%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 150px;
+    background-color: white;
+    border-top: 4px solid #c24c28;
+ 
+}
+
+.tcontainer{
+    height: fit-content;
+    background-color: whitesmoke;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+
+.h1{
+    font-family: Montserrat;
+    font-size: x-large;
+
+}
+.p1c{
+    display: flex;
+    justify-content: center;
+}
+.p1{
+    font-style: italic;
+    font-family: Montserrat;
+    border-bottom: 3px solid #c24c28;
+    height: 37px;
+}
+
+
+/*DESCIMG seccion*/
+.descimg{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 820px;
+    background-color: white;
+}
+
+.di-container{
+    display: flex;
+    flex-direction: row-reverse;
+
+}
+.di-container img{
+    margin-left: 5%;
+    max-width: 45%;
+    border-radius: 10%;
+    box-shadow: 0 0 5px rgba(0,0,0,100);
+}
+.descp{
+    background-color: whitesmoke;
+    align-self: center;
+    margin-right: 5%;
+    text-align: center;
+    height: fit-content;
+    width: fit-content;
+    box-shadow: 0 0 5px rgba(0,0,0,0.4);
+    padding-left: 50px;
+    padding-right: 1%;
+    font-size: large;
+    column-width: auto;
+}
+
+
+
+
+
+/*Media Code*/
+/*#vacio*/
+@media (max-width: 1590px){
+    #vacio{
+        height: 540px;
+    }
+}
+
+@media (max-width: 1278px){
+    #vacio{
+        height: 440px;
+    }
+}
+
+@media (max-width: 1080px){
+    .body-{
+        background-size: 100%;
+        background-repeat: repeat;
+    }
+    #vacio{
+        height: 220px;
+    }
+    .di-container{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .descp{
+        padding-left: 0%;
+        padding-right: 0%;
+        margin: 0%;
+        margin-top: 30px;
+        background-color: whitesmoke;
+        text-align: center;
+        height: fit-content;
+        width: fit-content;
+        box-shadow: 0 0 5px rgba(0,0,0,0.4);
+        padding: 0%;
+        padding-right: 0%;
+        max-width: 60%;
+        font-size: medium;
+    }
+    .di-container img{
+        padding: 0%;
+        margin: 0%;
+        max-width: 45%;
+        min-width: 80%;
+        border-radius: 10%;
+        box-shadow: 0 0 5px rgba(0,0,0,100);
+    }
+}
+
+@media (max-width: 529px){
+    .descp{
+        font-size: small;
+        max-width: 90%;
+    }
+
+    .descimg{
+        height: 600px;
+    }
+    .di-container{
+        padding-top: 100px;
+    }
+}

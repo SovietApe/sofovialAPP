@@ -1,0 +1,28 @@
+<head>
+  <link rel="stylesheet" href="/stylesheets/login.css">
+</head>
+<body>
+<div class="cuadro">
+    <form action="/admin/login" method="post">
+  <div class="form-field">
+    <input type="text" placeholder="Username" name="usuario" required/>
+  </div>
+  
+  <div class="form-field">
+    <input type="password" placeholder="Password" name="password" required/></div>
+  
+  <div class="form-field">
+    <button class="btn" type="submit">Log in</button>
+  </div>
+  {{#if error}}
+    <div class="error">
+             <p>usuario y/o contraseña erroneas</p>
+    </div>
+{{/if}}
+</form>
+</div>
+</body>
+</html>
+
+
+      

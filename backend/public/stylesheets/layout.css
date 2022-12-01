@@ -1,0 +1,37 @@
+header{
+    border-top: 2px solid #c24c28;
+    min-height: 70px;
+    width: 100%;
+    display: flex;
+    background: whitesmoke;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-img{
+
+    padding-left: 1%;
+    margin: 0.5%;
+}
+
+@media (max-width: 1080px){
+
+    /*empieza header*/
+    header{
+        width: 100%;
+        flex-direction: column;
+    }
+
+
+    .menu a{
+
+        font-size: 60%;
+
+    }
+
+    .logo-img{
+        padding-left: 0%;
+    }
+    
+}

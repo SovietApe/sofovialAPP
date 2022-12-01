@@ -1,0 +1,48 @@
+<head>
+    <link rel="stylesheet" href="/stylesheets/contacto.css">
+</head>
+<body class='body3'>
+    <main class="holderForm">
+        <div class="containerForm">
+            <div>
+                <h2>Contacto Rapido</h2>
+                <form class="formulario" onSubmit={handleSubmit}>
+                    <p>
+                        <label for="nombre">Nombre</label>
+                        <input type="text" name="nombre" value={}
+                        onChange={handleChange}/>
+                    </p>
+                    <p>
+                        <label for="email">Email</label>
+                        <input type="text" name="email" value={}
+                         onChange={} />
+                    </p>
+                    <p>
+                        <label for="telefono">Teléfono</label>
+                        <input type="text" name="telefono" value={}
+                        onChange={}/>
+                    </p>
+                    <p>
+                        <label for="mensaje">Comentario</label>
+                        <textarea name="mensaje" value={} onChange={}></textarea>
+                    </p>
+                    {sending ? <p>Enviando...</p> : null}
+                    {msg ? <p>{msg}</p> : null}
+                    <p>
+                        <input type="submit" value="Enviar" />
+                    </p>
+                </form>
+            </div>
+            <div class="datos">
+                <h2>Otras Vias de Comunicacion</h2>
+                <p>Tambien puede contactarse con nosotros usando los siguientes metodos</p>
+                <ul>
+                    <li>Teléfono: 2335135</li>
+                    <li>Email: contactosofovial@gmail.com</li>
+                    <li>Facebook: Sofovial</li>
+                    <li>Instagram: @Sofovial</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+</body>

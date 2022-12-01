@@ -1,0 +1,14 @@
+body{
+    margin: 0%;
+    padding: 0%;
+}
+
+.text-end{
+    font-family: 'Montserrat', sans-serif;
+    font-size: large;
+}
+
+.text-end a{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: medium
+}
